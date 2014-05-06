@@ -6,6 +6,7 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contact_params)
 
     if @contact.save
+      finished('header_title') #AB test convertion
       render :show
     else
       render :new
