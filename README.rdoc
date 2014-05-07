@@ -1,4 +1,6 @@
-== README
+== Rails Landing Page boilerplate
 
 This is a Rails 4.1 boilerplate for creating landing pages with a contact form and A/B tests.
 It uses the 'split' gem for the tests, thus needs a Redis instance to save the tests results.
+
+The split dashboard is mounted at '/split' with basic HTTP auth. The user/password can be edited at the split_config.rb initializer.
