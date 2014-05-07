@@ -12,12 +12,12 @@ gem 'jbuilder', '~> 2.0'
 
 gem 'split', :require => 'split/dashboard'
 
+gem 'sqlite3'
 
 group :development do
   gem 'spring' # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem "better_errors"
   gem "binding_of_caller"
-  gem 'sqlite3'
 end
 
 group :production do
