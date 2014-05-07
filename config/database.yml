@@ -23,8 +23,3 @@ test:
 production:
   <<: *default
   adapter: postgresql
-  host: ec2-54-83-9-127.compute-1.amazonaws.com
-  port: 5432
-  database: db4ko9nnpuscql
-  user: cldksueezzpbmw
-  password: P-5cWLiTrDXrHFUh2Po10I8jIG
