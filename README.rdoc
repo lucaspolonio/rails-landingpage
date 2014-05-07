@@ -3,7 +3,7 @@
 This is a Rails 4.1 boilerplate for creating landing pages with a contact form and A/B tests.
 It uses the 'split' gem for the tests, thus needs a Redis instance to save the tests results.
 
-=== Instructions for heroku
+=== Instructions for free deployment on Heroku
 
 * git clone the project
 * Create a new Heroku app with a pg database (`` heroku create ``)
