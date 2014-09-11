@@ -4,6 +4,8 @@ gem 'rails', '4.1.0'
 gem 'turbolinks'
 
 gem 'sass-rails', '~> 4.0.3'
+gem "therubyracer"
+gem "less-rails"
 gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem "twitter-bootstrap-rails"
