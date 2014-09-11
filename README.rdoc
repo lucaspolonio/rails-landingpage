@@ -1,13 +1,24 @@
 == Rails Landing Page boilerplate
 
-This is a Rails 4.1 boilerplate for creating landing pages with a contact form and A/B tests.
-It uses the 'split' gem for the tests, thus needs a Redis instance to save the tests results.
-It also has newrelic and heroku gems pre-configured.
+This is a Rails 4.1 boilerplate for really fast creation of landing pages with a contact form and A/B tests.
+It also comes with bootstrap and heroku gems pre-configured.
+
+=== A/B Testing
+This gem uses the 'split' gem for tests, thus needs a Redis instance to save the tests results.
+For creating a new test, simply create one on-demand using the ``ab_test`` method. For marking the test as successful, use the ``finished`` method. Examples are already provided at the index view and at ContactsController#create. More info can be found at https://github.com/andrew/split#usage.
+
+=== Contact form
+This gem comes with pre-configured Contact model including name, email and a text field. If you don't need some of them, simply remove the validation from the model and the fields from the form view.
+
+=== Accessing tests and contacts results
+
+
 
 === Instructions for free deployment on Heroku
 
 * git clone the project
 * Create a new Heroku app with a pg database (`` heroku create appname``)
-* Install Redis to go add-on on heroku (``heroku addons:add redistogo``). The Nano plan is free.
+* Install Redis to go add-on on heroku (``heroku addons:add redistogo``).
 * Deploy your app and run db migrations (``git push heroku master && heroku run rake db:migrate``)
 * The split dashboard is mounted at '/split' with basic HTTP auth. The user/password can be edited at the split_config.rb initializer.
+
