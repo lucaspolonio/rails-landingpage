@@ -5,13 +5,14 @@ It also comes with bootstrap and heroku gems pre-configured.
 
 === A/B Testing
 This gem uses the 'split' gem for tests, thus needs a Redis instance to save the tests results.
-For creating a new test, simply create one on-demand using the ``ab_test`` method. For marking the test as successful, use the ``finished`` method. Examples are already provided at the index view and at ContactsController#create. More info can be found at https://github.com/andrew/split#usage.
+For creating a new test, simply create one on-demand using the ``ab_test`` method. For marking the test as successful, use the ``finished`` method. Examples are already provided at the LandingController#index view and at ContactsController#create. More info can be found at https://github.com/andrew/split#usage.
 
 === Contact form
-This gem comes with pre-configured Contact model including name, email and a text field. If you don't need some of them, simply remove the validation from the model and the fields from the form view.
+This gem comes with a pre-configured Contact model including name, email and a text field. If you don't need some of them, simply remove the validation from the model and the fields from the form view.
 
 === Accessing tests and contacts results
 
+TODO
 
 
 === Instructions for free deployment on Heroku
