@@ -11,7 +11,3 @@ It also has newrelic and heroku gems pre-configured.
 * Install Redis to go add-on on heroku (``heroku addons:add redistogo``). The Nano plan is free.
 * Deploy your app and run db migrations (``git push heroku master && heroku run rake db:migrate``)
 * The split dashboard is mounted at '/split' with basic HTTP auth. The user/password can be edited at the split_config.rb initializer.
-
-=== Keeping your free Heroku app alive (i.e. don't let it idle)
-
-* Install New Relic add-on (``heroku addons:add newrelic:stark``)

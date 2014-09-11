@@ -26,7 +26,6 @@ end
 group :production do
   gem 'pg'
   gem 'rails_12factor' #heroku
-  gem 'newrelic_rpm' #new relic ping
   gem 'uglifier', '>= 1.3.0' # Use Uglifier as compressor for JavaScript assets
 end
 
