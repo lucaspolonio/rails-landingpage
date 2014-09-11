@@ -1,3 +1,5 @@
+<h4>Contact form:</h4>
+
 <%= form_for(@contact, :remote => true, "data-type" => :json) do |f| %>
   <% if @contact.errors.any? %>
       <% @contact.errors.full_messages.each do |message| %>
