@@ -11,9 +11,8 @@ gem 'jquery-rails'
 gem "twitter-bootstrap-rails"
 
 gem 'split', :require => 'split/dashboard'
-
 gem 'activeadmin', github: 'activeadmin'
-
+gem 'devise'
 
 group :development do
   gem 'spring'
