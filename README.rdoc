@@ -8,7 +8,7 @@ This project uses the 'split' gem for tests, thus needs a Redis instance to save
 For creating a new test, simply create one on-demand using the ``ab_test`` method. For setting the test as successful, use the ``finished`` method. Examples are already provided at the LandingController#index view and at ContactsController#create. More info can be found at https://github.com/andrew/split#usage.
 
 === Contact form
-This gem comes with a pre-configured Contact model including name, email and a text field. If you need to change this, simply remove the validation from the model and the fields from the form view. Migrations may be needed.
+This gem comes with a pre-configured Contact model (name, email and a text field) and controller/views using Ajax.
 
 === Accessing tests and contacts results
 Simply go to '/admin' and follow the links. Activeadmin creates a default user when you run your migrations (user: admin@example.com, password: password). You should change the default password after deploying your app to production.
